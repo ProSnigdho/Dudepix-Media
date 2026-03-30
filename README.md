@@ -1,7 +1,5 @@
 # DudePix Media
 
-![DudePix Media Banner](https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop)
-
 ## Elevating Modern Brands Through Digital Mastery
 
 **DudePix Media** is a premium content agency dedicated to crafting high-converting visual experiences. We bridge the gap between attention and conversion through strategic editing, viral-ready creatives, and data-driven storytelling.
