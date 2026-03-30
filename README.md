@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DudePix Media
 
-## Getting Started
+![DudePix Media Banner](https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop)
 
-First, run the development server:
+## Elevating Modern Brands Through Digital Mastery
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**DudePix Media** is a premium content agency dedicated to crafting high-converting visual experiences. We bridge the gap between attention and conversion through strategic editing, viral-ready creatives, and data-driven storytelling.
+
+---
+
+## 🚀 Key Services
+
+- **Short Form Content**: Viral-ready Reels, TikToks, and YouTube Shorts.
+- **Podcast Clips**: Transform long-form conversations into high-impact social snippets.
+- **Ad Creatives & VSLs**: Purpose-built content designed to drive measurable ROI.
+- **YouTube Mastery**: High-end editing and thumbnail strategy for top-tier creators.
+- **SAAS & Product Videos**: Motion graphics and walkthroughs that explain and sell.
+
+## 📈 The Impact
+
+Validated by numbers that drive real business growth:
+- **501%** increase in client leads.
+- **1.2M+** total views generated across platforms.
+- **15M** global reach for our partners.
+
+---
+
+## 🛠️ Tech Stack
+
+Built with a modern, high-performance web stack for a pixel-perfect aesthetic:
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router & Turbopack)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Typeface**: Inter & Outfit (Google Fonts)
+
+---
+
+## 📦 Project Structure
+
+```text
+dudepix-media/
+├── app/            # Next.js App Router (Pages & Layouts)
+├── components/     # Reusable UI Components (Hero, SocialProof, Stats, etc.)
+├── lib/            # Utility functions and shared logic
+├── public/         # Static assets and media
+└── ...             # Configuration files (Next, Tailwind, TS)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
+- Node.js 18.17+
+- npm / yarn / pnpm
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**:
+   ```bash
+   git clone [your-repo-url]
+   cd dudepix-media
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✨ Features
+
+- **Premium Aesthetics**: Sleek dark mode with glassmorphism and modern gradients.
+- **Dynamic Scroll Reveals**: Interactive sections that come to life as you scroll.
+- **High-Performance**: Optimized for speed and responsiveness across all devices.
+- **Real-Time Counters**: Animated statistics to visualize agency impact.
+- **Integrated Video Player**: Seamless Vimeo integration for case studies and VSLs.
+
+---
+
+© 2026 DudePix Media Digital. All rights reserved.

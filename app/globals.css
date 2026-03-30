@@ -1,26 +1,105 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --muted: #9ca3af;
+  --accent: #1A4848;
+  --accent-purple: #7c3aed;
+  --border: rgba(255, 255, 255, 0.1);
+  --glass: rgba(255, 255, 255, 0.05);
+
+  --font-inter: var(--font-inter);
+  --font-outfit: var(--font-outfit);
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-purple: var(--accent-purple);
+  --color-border-subtle: var(--border);
+  --color-glass: var(--glass);
+
+  /* Brand Color Overrides (Replacing Blue with Logo Color) */
+  --color-blue-50: #eef6f6;
+  --color-blue-100: #d6e8e8;
+  --color-blue-200: #b0cfcf;
+  --color-blue-300: #88b5b5;
+  --color-blue-400: #619c9c;
+  --color-blue-500: #1A4848;
+  --color-blue-600: #163f3f;
+  --color-blue-700: #123333;
+  --color-blue-800: #0d2626;
+  --color-blue-900: #091a1a;
+  --color-blue-950: #050d0d;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
+
+  --animate-pulse-slow: pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+/* Custom Utilities */
+.glow-purple {
+  background: radial-gradient(circle at center, rgba(124, 58, 237, 0.2) 0%, transparent 70%);
+  filter: blur(80px);
+}
+
+.glow-blue {
+  background: radial-gradient(circle at center, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+  filter: blur(80px);
+}
+
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ffffff, #9ca3af);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
