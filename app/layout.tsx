@@ -15,6 +15,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "DudePix Media",
   description: "Transform your content with DudePix Media. Short-form, long-form, and strategy for modern brands.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" }
+    ],
+  },
 };
 
 export default function RootLayout({
