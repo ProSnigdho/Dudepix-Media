@@ -13,10 +13,9 @@ export const BookCall = () => {
             const cal = await getCalApi();
             cal("ui", {
                 theme: "dark",
-                styles: {
-                    branding: {
-                        brandColor: "#006bff", // Forces the dots/circles to your blue
-                    },
+                cssVarsPerTheme: {
+                    dark: { "cal-brand": "#006bff" },
+                    light: { "cal-brand": "#006bff" },
                 },
                 hideEventTypeDetails: false,
                 layout: "month_view",

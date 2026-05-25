@@ -3,13 +3,11 @@
 import React from "react";
 import { 
   Youtube, 
-  Instagram, 
   LayoutGrid, 
   Video, 
   PenTool, 
   TrendingUp, 
   Smartphone, 
-  Users 
 } from "lucide-react";
 import { ScrollReveal } from "./scroll-reveal";
 

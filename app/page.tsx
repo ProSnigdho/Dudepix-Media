@@ -6,6 +6,7 @@ import { TestimonialGrid } from "@/components/testimonial-grid";
 import { Work } from "@/components/work";
 import { CaseStudies } from "@/components/case-studies";
 import { Comparison } from "@/components/comparison";
+import { CinematicShowcase } from "@/components/cinematic-showcase";
 import { ProcessTimeline } from "@/components/process-timeline";
 import { Services } from "@/components/services";
 import { FAQ } from "@/components/faq";
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <main className="relative min-h-screen bg-background selection:bg-accent/30 selection:text-white">
       {/* Background noise/grain overlay for premium feel */}
-      <div className="fixed inset-0 pointer-events-none opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-50 mix-blend-overlay" />
+      <div className="fixed inset-0 pointer-events-none opacity-[0.03] bg-[url('/noise.svg')] z-50 mix-blend-overlay" />
 
       <Navbar />
       <Hero />
@@ -26,6 +27,7 @@ export default function Home() {
       <Work />
       <CaseStudies />
       <Comparison />
+      <CinematicShowcase />
       <ProcessTimeline />
       <Services />
       <BookCall />

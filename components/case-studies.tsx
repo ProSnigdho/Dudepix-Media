@@ -52,7 +52,7 @@ export const CaseStudies = () => {
                 Proven <span className="text-zinc-500">Results.</span>
               </h2>
               <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-                We don't just edit videos. We build systems that transform silent players into industry-leading authorities.
+                We don&apos;t just edit videos. We build systems that transform silent players into industry-leading authorities.
               </p>
             </div>
             <Button variant="outline" className="rounded-full px-8 py-6 border-white/10 hover:bg-white hover:text-black transition-all duration-500">
@@ -88,7 +88,7 @@ export const CaseStudies = () => {
                     <div className="relative mb-12">
                       <Quote className={`absolute -left-10 -top-8 w-16 h-16 ${cs.accentColor} opacity-10 pointer-events-none group-hover:opacity-20 transition-opacity`} />
                       <h3 className="text-2xl md:text-4xl font-semibold text-white/90 leading-tight tracking-tight">
-                        "{cs.quote}"
+                        &quot;{cs.quote}&quot;
                       </h3>
                     </div>
 

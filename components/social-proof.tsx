@@ -1,20 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import { Play, Mic, Video, TrendingUp, Users, X } from "lucide-react";
+import { Play } from "lucide-react";
 import { ScrollReveal } from "./scroll-reveal";
-import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const VIMEO_ID = "1123026653";
 
-const badges = [
-  { icon: Video, label: "Short Form Content", color: "bg-purple-500", rotation: "-rotate-6" },
-  { icon: Mic, label: "Podcast Clips", color: "bg-blue-500", rotation: "rotate-3" },
-  { icon: TrendingUp, label: "Viral Growth", color: "bg-green-500", rotation: "-rotate-2" },
-  { icon: Users, label: "Community Building", color: "bg-orange-500", rotation: "rotate-6" },
-];
+
 
 export const SocialProof = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -28,7 +22,7 @@ export const SocialProof = () => {
               Built To Convert <span className="text-blue-500">Every Impression</span>
             </h2>
             <p className="text-gray-400 text-lg md:text-xl">
-              Content that doesn't just look good, but drives actual business results.
+              Content that doesn&apos;t just look good, but drives actual business results.
             </p>
           </ScrollReveal>
         </div>

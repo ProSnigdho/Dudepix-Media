@@ -18,7 +18,7 @@ export const PrivacyPolicyContent = () => (
       <ul className="list-disc pl-5 mt-2 space-y-2">
         <li>Provide and deliver the social media services you request.</li>
         <li>Communicate with you about project updates and inquiries.</li>
-        <li>Improve our website's user experience through analytics.</li>
+        <li>Improve our website&apos;s user experience through analytics.</li>
         <li>Send promotional content if you have opted in to receive it.</li>
       </ul>
     </section>

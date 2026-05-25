@@ -4,6 +4,7 @@ import React from "react";
 import { Check, X, ShieldCheck, Zap, HeartHandshake, Rocket, Star, Plus } from "lucide-react";
 import { ScrollReveal } from "./scroll-reveal";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const comparison = [
   { feature: "Dedicated Producer & Project Manager", mz: true, others: false },
@@ -24,10 +25,21 @@ const features = [
 export const Comparison = () => {
   return (
     <section className="py-32 relative overflow-hidden bg-black w-full">
+      {/* Background Image Layer */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Image
+          src="/background.png"
+          alt="Background"
+          fill
+          className="object-cover opacity-80"
+          priority
+        />
+      </div>
+
       {/* Top Gradient Divider */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />
 
-      <div className="max-w-6xl mx-auto px-6 relative w-full">
+      <div className="max-w-6xl mx-auto px-6 relative z-10 w-full">
 
         {/* HEADER SECTION */}
         <div className="w-full flex justify-center mb-24">
@@ -40,7 +52,7 @@ export const Comparison = () => {
                 THE <span className="text-blue-500">DIFFERENCE.</span>
               </h2>
               <p className="text-zinc-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-medium">
-                Most agencies are just "editors." We are a growth infrastructure built to scale your personal brand.
+                Most agencies are just &quot;editors.&quot; We are a growth infrastructure built to scale your personal brand.
               </p>
             </div>
           </ScrollReveal>

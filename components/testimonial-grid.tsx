@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const testimonials = [
   { id: 1, videoId: "1135498628" },
@@ -37,12 +38,22 @@ export const TestimonialGrid = () => {
 
   return (
     <section id="review" className="py-24 bg-black relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      {/* Background Image Layer */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Image
+          src="/background.png"
+          alt="Background"
+          fill
+          className="object-cover opacity-80"
+        />
+      </div>
 
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-            What People Are <span className="text-blue-500 italic">Saying About Us</span>
+            What People Are{" "}
+            <span className="text-blue-500 italic">Saying About Us</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl align-center justify-center mx-auto max-w-2xl leading-relaxed pt-2">
             Join hundreds of top creators who have scaled their brand with us.
@@ -51,13 +62,18 @@ export const TestimonialGrid = () => {
 
         {/* Carousel Stage */}
         <div className="relative h-[650px] w-full flex items-center justify-center">
-
           {/* Navigation Arrows */}
           <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between z-30 pointer-events-none px-4 md:px-10">
-            <button onClick={handlePrev} className="p-4 rounded-full bg-zinc-800/50 hover:bg-zinc-700 text-white transition-all pointer-events-auto backdrop-blur-md">
+            <button
+              onClick={handlePrev}
+              className="p-4 rounded-full bg-zinc-800/50 hover:bg-zinc-700 text-white transition-all pointer-events-auto backdrop-blur-md"
+            >
               <ChevronLeft className="w-8 h-8" />
             </button>
-            <button onClick={handleNext} className="p-4 rounded-full bg-zinc-800/50 hover:bg-zinc-700 text-white transition-all pointer-events-auto backdrop-blur-md">
+            <button
+              onClick={handleNext}
+              className="p-4 rounded-full bg-zinc-800/50 hover:bg-zinc-700 text-white transition-all pointer-events-auto backdrop-blur-md"
+            >
               <ChevronRight className="w-8 h-8" />
             </button>
           </div>
