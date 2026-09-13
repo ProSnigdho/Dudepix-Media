@@ -47,7 +47,7 @@ export const Navbar = () => {
           <img 
     src="/new%20logo.png" 
     alt="DudePix Media Logo" 
-    className="h-8 w-auto object-contain" 
+    className="h-12 w-auto object-contain" 
   />
 
         </Link>
