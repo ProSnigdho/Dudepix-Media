@@ -37,19 +37,19 @@ export const Navbar = () => {
         )}
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center font-bold text-white group-hover:rotate-12 transition-transform">
+        <Link href="/" className="relative flex items-center gap-2 group w-48 h-8">
+          <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center font-bold text-white group-hover:rotate-12 transition-transform shrink-0">
             D
           </div>
           {/* <span className="font-display font-bold text-xl tracking-tight uppercase">
             DudePix Media
           </span> */}
+          
           <img 
-    src="/new%20logo.png" 
-    alt="DudePix Media Logo" 
-    className="h-24 w-auto object-contain" 
-  />
-
+            src="/new%20logo.png" 
+            alt="DudePix Media Logo" 
+            className="absolute left-10 top-1/2 -translate-y-1/2 h-24 w-auto object-contain max-w-none" 
+          />
         </Link>
 
         {/* Desktop Nav */}
