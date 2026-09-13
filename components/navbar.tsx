@@ -41,9 +41,14 @@ export const Navbar = () => {
           <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center font-bold text-white group-hover:rotate-12 transition-transform">
             D
           </div>
-          <span className="font-display font-bold text-xl tracking-tight uppercase">
+          {/* <span className="font-display font-bold text-xl tracking-tight uppercase">
             DudePix Media
-          </span>
+          </span> */}
+          <img 
+    src="/new%20logo.png" 
+    alt="DudePix Media Logo" 
+    className="h-8 w-auto object-contain" 
+  />
 
         </Link>
 
