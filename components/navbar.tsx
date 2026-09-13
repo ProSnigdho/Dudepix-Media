@@ -48,7 +48,7 @@ export const Navbar = () => {
           <img 
             src="/new%20logo.png" 
             alt="DudePix Media Logo" 
-            className="absolute left-4 top-1/2 -translate-y-1/2 h-36 w-auto object-contain max-w-none" 
+            className="absolute left-2 top-1/2 -translate-y-1/2 h-40 w-auto object-contain max-w-none" 
           />
         </Link>
 
